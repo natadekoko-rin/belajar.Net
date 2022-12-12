@@ -1,6 +1,6 @@
 public class LogicFor {
     public static void main(String[] args) {
-        soal01(7);
+        soal02(7);
     }
 
     public static void soal01(int n){
@@ -32,8 +32,15 @@ public class LogicFor {
         //proses menampilkan array
         for (int k=0; k<n; k++){
             for (int l=0; l<n; l++){
-                System.out.print(deret[k][l]+"\t\t");
+                if(k>=l){
+                    System.out.print(deret[k][l]+"\t\t");
+                }else{
+                    System.out.print("\t\t");
+                }
+
+//                System.out.print(deret[k][l]+"\t\t");
             }
+            System.out.println("\n");
         }
     }
 }
