@@ -12,6 +12,7 @@ public class Solve {
         logic1_4(in);
         System.out.println("Logic 1 no 5");
         logic1_5(in);
+        //trouble
         System.out.println("Logic 1 no 6");
         logic1_6(in);
         System.out.println("Logic 1 no 7");
@@ -89,8 +90,10 @@ public class Solve {
 
     //trouble
     public static void logic1_6(int n){
-        int[] deret = new int[20];
-        for(int i=1; i<=20; i++){
+        int[] deret = new int[n];
+//        for(int i=1; i<=20; i++){
+        int i = 0;
+        while(i!=13){
             int co=0;
             for(int j=1; j<=i; j++){
                 if(i%j == 0){
@@ -99,13 +102,15 @@ public class Solve {
             }
             if(co == 2){
                 System.out.print(i+" ");
+                i++;
             }
-            deret[i] = 1;
+//            deret[i] = 1;
 //            if(co == 2){
 //                deret[i] = i;
 //            }
+            i++;
         }
-        printArray(deret);
+//        printArray(deret);
     }
 
     public static void logic1_7(int n){
@@ -118,7 +123,7 @@ public class Solve {
             deret[i] = (char)it;
 //            System.out.println((char) it);
         }
-        printArrayC(deret);
+        printArray(deret);
     }
 
     public static void logic1_8(int n){
@@ -133,7 +138,7 @@ public class Solve {
             }
 
         }
-        printArrayS(deret);
+        printArray(deret);
 
     }
 
@@ -159,14 +164,14 @@ public class Solve {
         }
         System.out.println("\n");
     }
-    public static void printArrayS(String[] StringArray){
+    public static void printArray(String[] StringArray){
         for (int j=0; j<StringArray.length; j++){
             System.out.print(StringArray[j]+"\t");
         }
         System.out.println("\n");
     }
 
-    public static void printArrayC(char[] charArray){
+    public static void printArray(char[] charArray){
         for (int j=0; j<charArray.length; j++){
             System.out.print(charArray[j]+"\t");
         }

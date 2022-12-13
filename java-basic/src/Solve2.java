@@ -16,7 +16,7 @@ public class Solve2 {
         int[][] deret = new int[n][n];
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                deret[i][j] = j+2;
+                deret[i][j] = j+1;
             }
         }
 
@@ -104,10 +104,10 @@ public class Solve2 {
         int[][] deret = new int[n][n];
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                if(j==0 || j==1 || j==2){
+                if(i==0 || i==1){
                     deret[i][j]=1;
                 }else{
-                    deret[i][j] = deret[i][j-1] + deret[i][j-2] + deret[i][j-3];
+                    deret[i][j] = deret[i-1][j] + deret[i-2][j];
                 }
             }
         }
