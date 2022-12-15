@@ -15,9 +15,9 @@ public class BasicLogic {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if(this.array[i][j] != null) {
-                    System.out.print(this.array[i][j] + "\t\t");
+                    System.out.print(this.array[i][j] + "\t");
                 }else {
-                    System.out.print("\t\t");
+                    System.out.print("\t");
                 }
             }
             System.out.println("\n");
@@ -26,7 +26,7 @@ public class BasicLogic {
 
     public void printSingle(){
         for (int i = 0; i < n; i++) {
-            System.out.print(array[0][i]+"\t\t");
+            System.out.print(array[0][i]+"\t");
         }
     }
 }

@@ -4,6 +4,7 @@ import logic.logicInterface.LogicInterface;
 //import logic.logicInterface.logic01Impl.Logic01Soal01Impl;
 //import logic.logicInterface.logic01Impl.Logic01Soal02Impl;
 import logic.logicInterface.logic01Impl.*;
+import logic.logicInterface.logic02Impl.*;
 
 public class MainLogicInterface {
     public static void main(String[] args) {
@@ -54,8 +55,20 @@ public class MainLogicInterface {
 //        LogicInterface logic02Soal01 = new Logic02Soal01Impl(new BasicLogic(inp));
 //        logic02Soal01.cetakArray();
 //
-//        System.out.println("\n\nLogic 02 Soal 01");
-//        LogicInterface logic02Soal02 = new Logic02Soal02Impl(new BasicLogic(inp));
-//        logic02Soal02.cetakArray();
+        System.out.println("\n\nLogic 02 Soal 01");
+        LogicInterface logic02Soal01 = new Logic02Soal01Impl(new BasicLogic(inp));
+        logic02Soal01.cetakArray();
+
+        System.out.println("\n\nLogic 02 Soal 02");
+        LogicInterface logic02Soal02 = new Logic02Soal02Impl(new BasicLogic(inp));
+        logic02Soal02.cetakArray();
+
+        System.out.println("\n\nLogic 02 Soal 03");
+        LogicInterface logic02Soal03 = new Logic02Soal03Impl(new BasicLogic(inp));
+        logic02Soal03.cetakArray();
+
+//        System.out.println("\n\nLogic 02 Soal 4");
+//        LogicInterface logic02Soal04 = new Logic02Soal04Impl(new BasicLogic(inp));
+//        logic02Soal04.cetakArray();
     }
 }

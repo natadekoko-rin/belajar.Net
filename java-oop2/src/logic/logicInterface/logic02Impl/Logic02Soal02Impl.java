@@ -10,16 +10,17 @@ public class Logic02Soal02Impl implements LogicInterface {
         this.logic = logic;
     }
 
+
     public void isiArray(){
         for (int i = 0; i < this.logic.n; i++) {
-            int angka = 1;
+            int num = 1;
             for (int j = 0; j < this.logic.n; j++) {
-                if(j==0 || i==0  || i == this.logic.n-1 || j== this.logic.n-1 ||
-                        i==j || i+j == this.logic.n-1){
-                    this.logic.array[i][j] = String.valueOf(angka);
+                if(i==this.logic.n-1 || i==0 || j==this.logic.n-1 || j==0){
+                    this.logic.array[i][j] = String.valueOf(num);
                 }
-                angka+=2;
+                num+=2;
             }
+
         }
     }
 
