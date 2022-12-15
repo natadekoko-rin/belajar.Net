@@ -67,8 +67,8 @@ public class MainLogicInterface {
         LogicInterface logic02Soal03 = new Logic02Soal03Impl(new BasicLogic(inp));
         logic02Soal03.cetakArray();
 
-//        System.out.println("\n\nLogic 02 Soal 4");
-//        LogicInterface logic02Soal04 = new Logic02Soal04Impl(new BasicLogic(inp));
-//        logic02Soal04.cetakArray();
+        System.out.println("\n\nLogic 02 Soal 4");
+        LogicInterface logic02Soal04 = new Logic02Soal04Impl(new BasicLogic(inp));
+        logic02Soal04.cetakArray();
     }
 }
