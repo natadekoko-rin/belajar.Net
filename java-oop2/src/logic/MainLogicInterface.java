@@ -9,7 +9,7 @@ import logic.logicInterface.logic02Impl.*;
 public class MainLogicInterface {
     public static void main(String[] args) {
 
-        int inp = 9;
+        int inp = 5;
 
         System.out.println("Logic 01 Soal 01");
         LogicInterface logic01Soal01 = new Logic01Soal01Impl(new BasicLogic(inp));
@@ -70,5 +70,9 @@ public class MainLogicInterface {
         System.out.println("\n\nLogic 02 Soal 4");
         LogicInterface logic02Soal04 = new Logic02Soal04Impl(new BasicLogic(inp));
         logic02Soal04.cetakArray();
+
+//        System.out.println("\n\nLogic 02 Soal 5");
+//        LogicInterface logic02Soal05 = new Logic02Soal05Impl(new BasicLogic(inp));
+//        logic02Soal05.cetakArray();
     }
 }
