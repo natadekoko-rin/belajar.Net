@@ -1,5 +1,7 @@
 package genericType;
 
+import java.util.StringJoiner;
+
 public class Car {
     private String name;
     private Double price;
@@ -29,4 +31,18 @@ public class Car {
         this.tier = tier;
     }
 
+    public Car(String name, Double price, Integer tier) {
+        this.name = name;
+        this.price = price;
+        this.tier = tier;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Car.class.getSimpleName() + "[", "]")
+                .add("name='" + name + "'")
+                .add("price=" + price)
+                .add("tier=" + tier)
+                .toString();
+    }
 }

@@ -1,7 +1,7 @@
 package genericType;
 
 public class Data {
-    public Object data;
+    public Object data;//ini tipe data objek
 
     public Object getData() {
         return data;

@@ -28,7 +28,7 @@ public class Animal {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //untuk menampilkan
         return new StringJoiner(", ", Animal.class.getSimpleName() + "[", "]")
                 .add("name='" + name + "'")
                 .add("foot=" + foot)
