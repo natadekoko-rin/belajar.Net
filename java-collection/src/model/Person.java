@@ -20,6 +20,13 @@ public class Person {
         this.city = city;
     }
 
+    public Person(int id, String name, String city, List<String> hobbies) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
+        this.hobbies = hobbies;
+    }
+
     public int getId() {
         return id;
     }
