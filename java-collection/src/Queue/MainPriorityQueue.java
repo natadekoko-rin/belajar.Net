@@ -10,16 +10,24 @@ public class MainPriorityQueue {
     public static void main(String[] args) {
 //        Comparator<Transport> comparator = new NumberComparator();
 //        PriorityQueue<Transport>  trasnports = new PriorityQueue<Transport>(Transport.getJenis(),NumberComparator);
-        PriorityQueue<Transport>  transports = new PriorityQueue<>();
+        PriorityQueue<String>  transports = new PriorityQueue<>();
 //        if (trasnports.offer(new Transport(1, "Public","Sedap" ,9))){
 //            System.out.println("Queue is not full");
 //        }else
 
-        transports.add(new Transport(1, "Public","Sedap" ,9));
-        transports.offer(new Transport(2, "Private","Indofood" ,3));
+//        transports.offer(new Transport(1, "Public","Sedap" ,9));
+//        transports.offer(new Transport(2, "Private","Indofood" ,3));
 
-        for (Transport t: transports){
-            System.out.println(t);
+        transports.offer("o");
+        transports.offer("i");
+        transports.offer("a");
+        transports.offer("h");
+
+//        for (Transport t: transports){
+//            System.out.println(t);
+//        }
+        for (String  next = transports.poll(); next  != null; next = transports.poll()){
+            System.out.println(next);
         }
 
         System.out.println(transports.size());
